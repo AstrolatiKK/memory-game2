@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <script>
+        <script>
             function flip(){
-                if (document.getElementById(myImge).src="card-07.jpg"
+                console.log("i m in flip : "+document.getElementById('myImage').src);
+                if (document.getElementById('myImage').src =="http://127.0.0.1/memorygametest/" + "card-01.jpg" ){
+                    document.getElementById('myImage').src = 'card-02.jpg';
+                    console.log("i m in flip1");
+                }else{
+                    document.getElementById('myImage').src = 'card-01.jpg';
+                    console.log("i m in flip2");
+                }
             }
+        </script>
+    </head>
 <body>
 
 <h2>What Can JavaScript Do?</h2>
@@ -13,9 +22,23 @@
 
 <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
 
-<button onclick="document.getElementById('myImage').src='card-01.jpg'">Turn on the light</button>
 
-<img id="myImage" src="card-01.jpg" style="width:100px">
+<div><img id="0" src="card-01.jpg" style="width:100px" onclick="flip()" >
+    <img id="1" src="card-01.jpg" style="width:100px" onclick="flip()" >
+    <img id="2" src="card-01.jpg" style="width:100px" onclick="flip()" >
+    <img id="3" src="card-01.jpg" style="width:100px" onclick="flip()" ></div>
+    <div><img id="4" src="card-01.jpg" style="width:100px" onclick="flip()" >
+        <img id="5" src="card-01.jpg" style="width:100px" onclick="flip()" >
+        <img id="6" src="card-01.jpg" style="width:100px" onclick="flip()" >
+        <img id="7" src="card-01.jpg" style="width:100px" onclick="flip()" ></div>
+        <div><img id="8" src="card-01.jpg" style="width:100px" onclick="flip()" >
+            <img id="9" src="card-01.jpg" style="width:100px" onclick="flip()" >
+            <img id="10" src="card-01.jpg" style="width:100px" onclick="flip()" >
+            <img id="11" src="card-01.jpg" style="width:100px" onclick="flip()" ></div>
+
+
+
+
 
 </body>
 </html>
